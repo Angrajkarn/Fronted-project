@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+
+.screen {
+    width: calc(100% - 40px);
+    height: 50px;
+    font-size: 24px;
+    margin: 10px 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    animation: slideIn 0.5s ease-out;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.buttons button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s, transform 0.1s;
+    transform: scale(1.1);
+}
+.buttons button:active {
+    transform: scale(0.95);
+}
+.buttons button.icon {
+    font-family: 'Font Awesome 5 Free';
+}
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.animated-button {
+    transition: transform 0.1s;
+}
+.animated-button:hover {
+    transform: scale(1.1);
+}
+
+
+.scientific-mode .buttons button {
+    width: 75px;
+}
+.history {
+    margin-top: 20px;
+}
+
+.history h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 100px;
+    overflow-y: auto;
+}
+.history li {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.history button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.history button:hover {
+    background-color: #c82333;
+}
+

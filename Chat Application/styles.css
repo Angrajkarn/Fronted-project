@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+#chat-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#chat-header {
+    background-color: #075e54;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#chat-header h2 {
+    margin: 0;
+    flex: 1;
+}
+
+#chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+.message.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+}
+
+.message.received {
+    background-color: #fff;
+    align-self: flex-start;
+}
+
+.message p {
+    margin: 0;
+}
+
+.message .status-indicator {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#message-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+#send-button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #075e54;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #128c7e;
+}
+
+/* User profile and status */
+#user-profile {
+    display: flex;
+    align-items: center;
+}
+
+#user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#user-status {
+    font-size: 14px;
+    color: #00cc66;
+}
+
+/* Call options */
+#call-options {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#video-call-button,
+#audio-call-button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: none;
+    background-color: #075e54;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#video-call-button:hover,
+#audio-call-button:hover {
+    background-color: #128c7e;
+}

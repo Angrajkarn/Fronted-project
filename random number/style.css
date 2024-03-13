@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .game-container {
+    margin-top: 20px;
+  }
+  
+  .guess-field {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .guess-submit {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .message {
+    margin-top: 10px;
+  }
+  

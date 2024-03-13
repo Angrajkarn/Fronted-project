@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 56px;
+    font-weight: bold;
+}
+.content{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.container{
+    /* background-color: red; */
+    width: 50vw;
+    font-weight: bold;
+
+}
+
+.logo img{
+  width: 32px;
+}
+toolbar-item button{
+    cursor: pointer;
+    color:"white";
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px 14px;
+}

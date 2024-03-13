@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp-style Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="chat-header">
+        <h1>Chat App</h1>
+        <div id="user-profile">
+            <img src="profile.jpg" alt="User Profile Picture">
+            <div id="user-status"></div>
+            <div id="last-seen"></div>
+        </div>
+        <div id="call-options">
+            <button id="video-call-button">Video Call</button>
+            <button id="audio-call-button">Audio Call</button>
+        </div>
+    </header>
+    
+    <main id="chat-container">
+        <div id="chat-box">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <div id="input-container">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+            <div id="typing-indicator">
+                <!-- Typing indicators will be displayed here -->
+            </div>
+            <div id="file-upload">
+                <input type="file" id="file-input">
+                <button id="upload-button">Upload</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
